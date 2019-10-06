@@ -10,12 +10,13 @@ const app = express();
 
 //req query = Acessar a query dos params (para filtros)
 //req params = Acessar route params (para edição , delete )
+//req body = Acessar o corpo da requisição (para criação e edição de registros)
 
-
-app.put('/users/:id', (req,res) => {
-    return res.json({id: req.params.id});
+/*
+app.post('/users', (req,res) => {
+    return res.json(req.body);
 });
-
+*/
 //nodemon é só para desenvolvimento 
 //express é um microframework 
 //express vai ajudar a definição de rotas
